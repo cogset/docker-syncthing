@@ -19,7 +19,7 @@ RUN buildDeps="wget ca-certificates" \
     && apt-get purge -y --auto-remove $buildDeps \
     && rm -rf /var/lib/apt/lists/* \
 # Configure
-    && mkdir -P /etc/syncthing
+    && mkdir -p /etc/syncthing
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
