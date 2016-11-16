@@ -5,7 +5,7 @@ FROM debian:jessie
 
 MAINTAINER You Ming <youming@funcuter.org>
 
-ENV SYNCTHING_VERSION v0.14.10
+ENV SYNCTHING_VERSION v0.14.11
 
 # Install
 RUN buildDeps="wget ca-certificates" \
@@ -15,9 +15,14 @@ RUN buildDeps="wget ca-certificates" \
     && mkdir -p /usr/local/syncthing \
     && tar -xzf syncthing.tar.gz -C /usr/local/syncthing --strip-components=1 \
     && rm syncthing.tar.gz \
+    && mkdir ln -s /usr/local/syncthing/syncthing /usr/sbin/syncthing \
     && apt-get purge -y --auto-remove $buildDeps \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+# Configure
+    && mkdir -P /etc/syncthing
+
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 EXPOSE 22000 8384
 
-CMD ["/usr/local/syncthing/syncthing"]
+CMD ["syncthing"]
