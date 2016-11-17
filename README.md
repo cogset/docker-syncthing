@@ -27,8 +27,3 @@ The default key and config directory is /etc/syncthing.
 $ docker run -d --name syncthing -p 22000:22000 -p 8384:8384 -v /syncthing:/etc/syncthing youmingdot/shadowsocks:latest
 ```
 You can enable web GUI in config and set address and port for it.
-
-------
-### Apologize for my poor English
-If there's any grammar or word mistakes, please point out.
-如果发现有语法或者用词错误，敬请指出。
