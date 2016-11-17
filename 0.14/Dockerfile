@@ -26,6 +26,6 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-EXPOSE 22000 8384
+EXPOSE 8384 22000
 
 CMD ["syncthing"]
