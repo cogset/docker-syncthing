@@ -11,6 +11,22 @@
 
 ------
 ### Usage
+##### Generate key and config
+```
+$ docker run --rm -v /syncthing:/etc/syncthing youmingdot/shadowsocks:latest -g /etc/syncthing
+```
+
+##### Run Syncthing
+```
+$ docker run -d --name syncthing -p 22000:22000 -v /syncthing:/etc/syncthing youmingdot/shadowsocks:latest
+```
+The default key and config directory is /etc/syncthing.
+
+##### Run with an web GUI
+```
+$ docker run -d --name syncthing -p 22000:22000 -p 8384:8384 -v /syncthing:/etc/syncthing youmingdot/shadowsocks:latest
+```
+You can enable web GUI in config and set address and port for it.
 
 ------
 ### Apologize for my poor English
