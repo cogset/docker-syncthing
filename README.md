@@ -3,7 +3,7 @@
 [![layers badge](https://images.microbadger.com/badges/image/youmingdot/syncthing.svg)](https://microbadger.com/images/youmingdot/syncthing)
 ### Supported tags and respective Dockerfile links
 
-+ `0.14.15`, `0.14`, `latest` [(0.14/Dockerfile)](https://github.com/youmingdot/docker-syncthing/blob/master/0.14/Dockerfile)
++ `0.14.19`, `0.14`, `latest` [(0.14/Dockerfile)](https://github.com/youmingdot/docker-syncthing/blob/master/0.14/Dockerfile)
 
 ------
 ### Author
