@@ -10,7 +10,7 @@ install:
 before_script:
   - env | sort
   - cd "$VERSION"
-  - image="youmingdot/syncthing:$VERSION"
+  - image="cogset/syncthing:$VERSION"
 
 script:
   - docker build -t "$image" .
