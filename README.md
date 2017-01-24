@@ -6,6 +6,12 @@
 + `0.14.19`, `0.14`, `latest` [(0.14/Dockerfile)](https://github.com/cogset/syncthing/blob/master/0.14/Dockerfile)
 
 ------
+### Software pages
++ [Syncthing](https://syncthing.net/)
++ [Syncthing Documents](https://docs.syncthing.net/)
++ [Syncthing Releases](https://github.com/syncthing/syncthing/releases)
+
+------
 ### Author
 + You Ming (youming@funcuter.org)
 
