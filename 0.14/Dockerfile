@@ -5,7 +5,7 @@ FROM debian:jessie
 
 MAINTAINER You Ming <youming@funcuter.org>
 
-ENV SYNCTHING_VERSION v0.14.19
+ENV SYNCTHING_VERSION v0.14.28
 
 # Install
 RUN buildDeps="wget ca-certificates" \
