@@ -1,9 +1,9 @@
 # Syncthing
-# AUTHOR You Ming
+# Cogset Open Source Group
 
 FROM debian:jessie
 
-MAINTAINER You Ming <youming@funcuter.org>
+MAINTAINER Cogset <cogset@funcuter.org>
 
 ENV SYNCTHING_VERSION v0.14.28
 
